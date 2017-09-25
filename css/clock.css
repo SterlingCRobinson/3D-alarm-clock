@@ -1,0 +1,29 @@
+/*styling #hex*/
+
+#hex {
+	padding-top: 18px;
+	padding-bottom: 10px;
+	font-family:'Orbitron';
+	color: lightgreen;
+	background: transparent;
+	border-radius: 5px;
+	/*Vertical centering*/
+	position: relative; top: 50%; margin-top: -32px;
+	/*Horizontal centering*/
+	text-align: center;
+	border: 2px solid lightgreen;
+}
+
+#hex:hover {
+	background-color: lightgreen;
+	border: 2px solid black;
+	color: black;
+}
+
+.heading1 {
+	padding: 2px;
+	color: white;
+	text-align: center;
+	font-family:'Orbitron';
+	border: 2px solid lightgreen;
+}

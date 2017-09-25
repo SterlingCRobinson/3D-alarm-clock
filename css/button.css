@@ -1,0 +1,75 @@
+.btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 1em 2em;
+  background: transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.btn:hover {
+	background-color: lightgreen;
+}
+
+.green span {
+  background: -webkit-linear-gradient(left, #add356, #00dfa6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Box-Shadow Technique */
+/*
+.box .green {
+  box-shadow: -1px 0 0 1px rgba(173, 211, 86, 0.75),
+   -1px -1px 0 1px rgba(130, 214, 106, 0.25),
+    -1px 1px 0 1px rgba(130, 214, 106, 0.25),
+     0 -1px 0 1px rgba(87, 217, 126, 0.5),
+      0 1px 0 1px rgba(87, 217, 126, 0.5),
+       1px -1px 0 1px rgba(44, 220, 146, 0.25),
+        1px 1px 0 1px rgba(44, 220, 146, 0.25),
+         1px 0 0 1px rgba(0, 223, 166, 0.75);
+}*/
+
+/* Gradient & Border Technique */
+.border .green {
+	border: 2px solid lightgreen;
+	border-radius: 5px
+}
+
+.border .green:hover {
+	border: 2px solid black;
+}
+
+/* Border Image Gradient Technique */
+.border-image .green {
+  border-image: linear-gradient(left, #add356, #00dfa6);
+  border-image-slice: 1;
+  border-image-width: 2px;
+}
+
+/* Stage Styles */
+body {
+  font: normal 1em 'Helvetica Neue', Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+  margin-top: 2em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.buttons {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.btn {
+  align-self: center;
+}
+
+a {
+  color: lightgreen;
+  text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
