@@ -25,11 +25,11 @@
   height: 360px;
   width: 360px;
   padding: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
   font-size: 27px;
   line-height: 1em;
   color: #fff;
-  border: 2px solid lightgreen;
+  border: 2px solid aqua;
   border-radius: 8px;
 }
 
