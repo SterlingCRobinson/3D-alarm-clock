@@ -47,29 +47,41 @@ $('body').keydown(function(evt) {
 ///////////////////////////////////////////////////////////////////////////
 
 //lets display the current time
-var d, h, m, s;
 function displayTime() {
-	d = new Date(); //new data object
-	h = d.getHours();
-	m = d.getMinutes();
-	s = d.getSeconds();
-	session = "AM";
-	
-	//defines PM
-	if (h == 0) {
-		h =12;
+	var date = new Date(); //new data object
+	var hours = date.getHours();
+	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
+	var session;
+
+	if (
+		!alarmTriggered &&
+		alarmTime != undefined &&
+		parseInt(hours) == alarmTime.hours &&
+		parseInt(minutes) == alarmTime.minutes
+	){
+		alarmTriggered = true;
+		var audio = document.getElementById("myAudio");
+		audio.play();
+		document.getElementById("stop").style.visibility = "visible";
 	}
-	if (h > 12) {
-		h = h - 12;
-		session = "PM"
+	
+	if (hours == 0) {
+		hours =12;
+	}
+	if (hours > 12) {
+		hours = hours - 12;
+	  session = "PM"; // defines PM
+	} else {
+		session = "AM"; // defines AM
 	}
 	
-	h = (h < 10) ? "0" + h : h;
-	m = (m < 10) ? "0" + m : m;
-	s = (s < 10) ? "0" + s : s;
+	hours = (hours < 10) ? "0" + hours : hours;
+	minutes = (minutes< 10) ? "0" + minutes : minutes;
+	seconds = (seconds < 10) ? "0" + seconds : seconds;
 
 	//set time
-	var time = h + ":" + m + ":" + s + " " + session;
+	var time = hours + ":" + minutes + ":" + seconds + " " + session;
 	document.getElementById("hex").innerText = time;
 	document.getElementById("hex").textContent = time;
 	
@@ -79,6 +91,27 @@ function displayTime() {
 
 //call the function
 displayTime();
-
-// END OF ALARM CLOCK //
+// END OF TIME DISPLAY //
 ///////////////////////////////////////////////////////////////////////////
+
+var alarmTime = undefined;
+var alarmTriggered = false;
+
+function setAlarm(event) {
+	event.preventDefault();
+	var hours = parseInt(document.getElementById("hours").value);
+	var minutes = parseInt(document.getElementById("minutes").value);
+	var period = document.getElementById("period").value;
+	if (period == "PM"){
+		hours = hours+12;
+	}
+	alarmTime = {
+		'hours': hours,
+		'minutes': minutes
+	};
+}
+
+var audio = document.getElementById("myAudio");
+audio.pause();
+
+
