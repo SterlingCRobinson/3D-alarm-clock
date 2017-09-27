@@ -63,7 +63,8 @@ function displayTime() {
 		alarmTriggered = true;
 		var audio = document.getElementById("myAudio");
 		audio.play();
-		document.getElementById("stop").style.visibility = "visible";
+		document.getElementById("stop").classList.remove('hidden');
+		document.getElementById("gif").classList.remove('hidden');
 	}
 	
 	if (hours == 0) {
@@ -102,9 +103,15 @@ function setAlarm(event) {
 	var hours = parseInt(document.getElementById("hours").value);
 	var minutes = parseInt(document.getElementById("minutes").value);
 	var period = document.getElementById("period").value;
+	hours = (hours < 10) ? "0" + hours : hours;
+	minutes = (minutes< 10) ? "0" + minutes : minutes;
+
+	document.getElementById("set").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set2").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set3").innerHTML = hours + ":" + minutes + " " + period;
 	if (period == "PM"){
 		hours = hours+12;
-	}
+	};
 	alarmTime = {
 		'hours': hours,
 		'minutes': minutes
@@ -113,5 +120,54 @@ function setAlarm(event) {
 
 var audio = document.getElementById("myAudio");
 audio.pause();
+
+function setAlarm3(event) {
+	event.preventDefault();
+	var hours = parseInt(document.getElementById("hours").value);
+	var minutes = parseInt(document.getElementById("minutes").value);
+	var period = document.getElementById("period").value;
+	hours = (hours < 10) ? "0" + hours : hours;
+	minutes = (minutes< 10) ? "0" + minutes : minutes;
+
+	document.getElementById("set").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set2").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set3").innerHTML = hours + ":" + minutes + " " + period;
+	if (period == "PM"){
+		hours = hours+12;
+	};
+	alarmTime = {
+		'hours': hours,
+		'minutes': minutes
+	};
+}
+
+var audio = document.getElementById("myAudio");
+audio.pause();
+
+function setAlarm3(event) {
+	event.preventDefault();
+	var hours = parseInt(document.getElementById("hours").value);
+	var minutes = parseInt(document.getElementById("minutes").value);
+	var period = document.getElementById("period").value;
+	hours = (hours < 10) ? "0" + hours : hours;
+	minutes = (minutes< 10) ? "0" + minutes : minutes;
+
+	document.getElementById("set").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set2").innerHTML = hours + ":" + minutes + " " + period;
+	document.getElementById("set3").innerHTML = hours + ":" + minutes + " " + period;
+	if (period == "PM"){
+		hours = hours+12;
+	};
+	alarmTime = {
+		'hours': hours,
+		'minutes': minutes
+	};
+}
+
+var audio = document.getElementById("myAudio");
+audio.pause();
+
+
+
 
 

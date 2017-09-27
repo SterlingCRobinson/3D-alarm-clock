@@ -3,7 +3,7 @@
   -webkit-perspective-origin: 50% 200px;
   -moz-perspective: 800px;
   -moz-perspective-origin: 50% 200px;*/
-  perspective: 800px;
+  perspective: 1000px;
   perspective-origin: 50% 200px;
 }
 
@@ -68,4 +68,43 @@
   -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);*/
   transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
 }
+
+.triangle {
+	background-image: url("../images/neon_tree.gif");
+	background-size: 400px 400px;
+  opacity: .7;
+}
+
+.three {
+	text-align: center;
+}
+
+label {
+	color: aqua;
+	font: normal 0.5em 'Orbitron';
+}
+
+.inputs {
+	margin: 2px;
+  background: aqua;
+  width: 50px;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid aqua;
+  height: 20px;
+  border-radius: 5px;
+  appearance: none;
+	font: normal 0.5em 'Orbitron';
+}
+
+select {
+  margin: 2px;
+  background: aqua;
+  width: 55px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid aqua;
+  height: 34px;
+  appearance: none;
+  font: normal 0.5em 'Orbitron';
+} 
 

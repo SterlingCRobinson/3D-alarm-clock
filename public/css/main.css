@@ -3,47 +3,37 @@ body {
 	background-repeat: no-repeat;
 }
 
-.face .three {
+.heading1 {
+	padding: 15px 0px;
+	color: red;
+	text-align: center;
+	font-family:'Orbitron';
+	border: 2px solid aqua;
+	border-radius: 5px;
+}
+
+ .hidden {
+	visibility: hidden;
+}
+
+img {
+	opacity: 0.7;
+}
+
+.LIT {
+	margin-top: 10%;
+	color: aqua;
+	font:normal .9em 'Orbitron';
 	text-align: center;
 }
 
-label {
+.ITSLIT {
 	color: aqua;
-	font: normal 0.5em 'Orbitron';
+	font:normal .9em 'Orbitron';
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: red;
+	padding: 15px 0px;
+	border: 2px solid aqua;
+	border-radius: 5px;
 }
-
-.inputs {
-	margin: 2px;
-  background: aqua;
-  width: 35px;
-  padding: 5px 5px 5px 5px;
-  border: 2px solid aqua;
-  height: 20px;
-  border-radius: 5px;
-  appearance: none;
-	font: normal 0.5em 'Orbitron';
-}
-
-#minutes {
-	margin: 2px;
-  background: aqua;
-  width: 35px;
-  padding: 5px 5px 5px 5px;
-  border: 2px solid aqua;
-  height: 20px;
-  border-radius: 5px;
-  appearance: none;
-	font: normal 0.5em 'Orbitron';
-}
-
-select {
-  margin: 2px;
-  background: aqua;
-  width: 55px;
-  padding: 5px 35px 5px 5px;
-  font-size: 16px;
-  border: 2px solid aqua;
-  height: 34px;
-  appearance: none;
-  font: normal 0.5em 'Orbitron';
-}  
