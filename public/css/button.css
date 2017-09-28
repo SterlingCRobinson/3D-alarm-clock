@@ -1,11 +1,14 @@
 .btn {
   display: inline-block;
   margin: 15px 0;
-  padding: 1em 2em;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
   background: transparent;
   border-radius: 3px;
   font-weight: 400;
   text-align: center;
+  align-self: center;
 }
 
 .btn:hover {
@@ -33,8 +36,49 @@
   text-align: center;
 }
 
-.btn {
+a {
+  color: aqua;
+  text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+.stopbtn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 1em 2em;
+  background: transparent;
+  border-radius: 3px;
+  font-weight: 400;
+  text-align: center;
   align-self: center;
+}
+
+.stopbtn:hover {
+	background-color: aqua;
+}
+
+/* Gradient & Border Technique */
+.stopborder .stopgreen {
+	border: 2px solid aqua;
+	border-radius: 10px
+}
+
+.stopborder .stopgreen:hover {
+	border: 2px solid black;
+}
+
+/* Stage Styles */
+.stopcubebtn {
+  font: normal 1em 'Orbitron', Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.stopbuttons {
+  text-align: center;
 }
 
 a {
