@@ -103,8 +103,8 @@ function setAlarm1(event) {
 	var hours = parseInt(document.getElementById("hours").value);
 	var minutes = parseInt(document.getElementById("minutes").value);
 	var period = document.getElementById("period").value;
-	hours = (hours < 10) ? "0" + hours : hours;
-	minutes = (minutes< 10) ? "0" + minutes : minutes;
+	hours = (hours < 10) ? 0 + hours : hours;
+	minutes = (minutes< 10) ? 0 + minutes : minutes;
 
 	document.getElementById("set").innerHTML = hours + ":" + minutes + " " + period;
 	if (period == "PM"){
