@@ -22,13 +22,6 @@
 	border: 2px solid black;
 }
 
-/* Border Image Gradient Technique */
-/*.border-image .green {
-  border-image: linear-gradient(left, #add356, #00dfa6);
-  border-image-slice: 1;
-  border-image-width: 2px;
-}*/
-
 /* Stage Styles */
 .cubebtn {
   font: normal 1em 'Orbitron', Roboto, 'Open Sans', Helvetica, Arial, sans-serif;
@@ -37,7 +30,6 @@
 }
 
 .buttons {
-  margin-top: 10%;
   text-align: center;
 }
 

@@ -18,12 +18,13 @@
         <div class="face two">
         	<article class="buttons border">	
     				<a class="btn green hidden" id="stop" href="" onclick="stop(event)">
-    					<div class="alarm cubebtn ">STOP</div>
+    					<div class="alarm cubebtn">STOP</div>
     				</a>
 					</article>          
 					<div id="hex"></div>
         </div>
         <div class="face three">
+        	<p class="TURNT">WHEN YOU TRYNA GET TURNT?</p>
         	<label for="hours">Hr</label>
         	<input class="inputs" id="hours" name="hours" type="number" placeholder="1-12" min="1" max="12">
         	<label for="minutes">Min</label>
@@ -33,43 +34,43 @@
         		<option value="AM">AM</option>
         		<option value="PM">PM</option>
         	</select>
-        	<div>
-        		<label for="hours">Hr</label>
-        		<input class="inputs" id="hours" name="hours" type="number" placeholder="1-12" min="1" max="12">
-        		<label for="minutes">Min</label>
-        		<input class="inputs" id="minutes" name="minutes" type="number" placeholder="1-59" min="1" max="59">
-        		<label for="period">AM/PM</label>
-        		<select class="selector" id="period" name="period">
-        			<option value="AM">AM</option>
-        			<option value="PM">PM</option>
-        		</select>
-        	</div>
-        	<div>
-        		<label for="hours">Hr</label>
-        		<input class="inputs" id="hours" name="hours" type="number" placeholder="1-12" min="1" max="12">
-        		<label for="minutes">Min</label>
-        		<input class="inputs" id="minutes" name="minutes" type="number" placeholder="1-59" min="1" max="59">
-        		<label for="period">AM/PM</label>
-        		<select class="selector" id="period" name="period">
-        			<option value="AM">AM</option>
-        			<option value="PM">PM</option>
-        		</select>
-        	</div>
-        	  <article class="buttons border">	
-    				<a class="btn green" href="" onclick="setAlarm(event)">
+        	 <article class="buttons border">	
+    				<a class="btn green" href="" onclick="setAlarm1(event)">
     					<div class="alarm cubebtn" id="set-alarm">SET ALARM</div>
     				</a>
 					</article>
-					 <article class="buttons border">	
+        	<div>
+        		<label for="hours">Hr</label>
+        		<input class="inputs" id="hours2" name="hours" type="number" placeholder="1-12" min="1" max="12">
+        		<label for="minutes">Min</label>
+        		<input class="inputs" id="minutes2" name="minutes" type="number" placeholder="1-59" min="1" max="59">
+        		<label for="period">AM/PM</label>
+        		<select class="selector" id="period2" name="period">
+        			<option value="AM">AM</option>
+        			<option value="PM">PM</option>
+        		</select>
+        		<article class="buttons border">	
+    				<a class="btn green" href="" onclick="setAlarm2(event)">
+    					<div class="alarm cubebtn" id="set-alarm">SET ALARM</div>
+    				</a>
+					</article>
+        	</div>
+        	<div>
+        		<label for="hours">Hr</label>
+        		<input class="inputs" id="hours3" name="hours" type="number" placeholder="1-12" min="1" max="12">
+        		<label for="minutes">Min</label>
+        		<input class="inputs" id="minutes3" name="minutes" type="number" placeholder="1-59" min="1" max="59">
+        		<label for="period">AM/PM</label>
+        		<select class="selector" id="period3" name="period">
+        			<option value="AM">AM</option>
+        			<option value="PM">PM</option>
+        		</select>
+        		<article class="buttons border">	
     				<a class="btn green" href="" onclick="setAlarm3(event)">
     					<div class="alarm cubebtn" id="set-alarm">SET ALARM</div>
     				</a>
 					</article>
-					 <article class="buttons border">	
-    				<a class="btn green" href="" onclick="setAlarm3(event)">
-    					<div class="alarm cubebtn" id="set-alarm">SET ALARM</div>
-    				</a>
-					</article>
+        	</div>
         </div>
         <div class="face four">
    				<img class="neontree hidden" id="gif" src="images/neon_tree.gif" width="360" height="360"> 
