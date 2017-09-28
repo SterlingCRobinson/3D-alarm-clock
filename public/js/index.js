@@ -63,8 +63,8 @@ function displayTime() {
 		alarmTriggered = true;
 		var audio = document.getElementById("myAudio");
 		audio.play();
-		document.getElementById("stop").classList.remove('hidden');
-		document.getElementById("gif").classList.remove('hidden');
+		document.getElementById("stop").classList.remove('hidden'); // STOP BUTTON SHOWS UP WHEN ALARM GET TRIGGERED
+		document.getElementById("gif").classList.remove('hidden');  // TREE GIF SHOWS UP WHEN ALARM GET TRIGGERED
 	}
 	
 	if (hours == 0) {
@@ -95,6 +95,11 @@ displayTime();
 // END OF TIME DISPLAY //
 ///////////////////////////////////////////////////////////////////////////
 
+
+
+///////////////////////////////////////////////////////////////////////////
+// SETTING ALARM TIMES AND DISPLAYS
+///////////////////////////////////////////////////////////////////////////
 var alarmTime = undefined;
 var alarmTriggered = false;
 
@@ -118,7 +123,13 @@ function setAlarm1(event) {
 
 var audio = document.getElementById("myAudio");
 audio.pause();
+// END OF ALARM TIME SET
+///////////////////////////////////////////////////////////////////////////
 
+
+///////////////////////////////////////////////////////////////////////////
+// THIS IS THE FUNCTIONALLITY FOR THE OTHER INPUTS TO SET MULTIPLE ALARMS
+///////////////////////////////////////////////////////////////////////////
 // function setAlarm2(event) {
 // 	event.preventDefault();
 // 	var hours = parseInt(document.getElementById("hours2").value);
@@ -160,6 +171,8 @@ audio.pause();
 
 // var audio = document.getElementById("myAudio");
 // audio.pause();
+// END OF EXTRA ALARMS SETS
+///////////////////////////////////////////////////////////////////////////
 
 
 
