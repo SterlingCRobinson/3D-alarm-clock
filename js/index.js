@@ -72,9 +72,9 @@ function displayTime() {
 	}
 	if (hours > 12) {
 		hours = hours - 12;
-	  session = "PM"; // defines PM
+	  session = "PM"; // defines  if it's PM
 	} else {
-		session = "AM"; // defines AM
+		session = "AM"; // defines if it's AM
 	}
 	
 	hours = (hours < 10) ? "0" + hours : hours;
@@ -119,47 +119,47 @@ function setAlarm1(event) {
 var audio = document.getElementById("myAudio");
 audio.pause();
 
-function setAlarm2(event) {
-	event.preventDefault();
-	var hours = parseInt(document.getElementById("hours2").value);
-	var minutes = parseInt(document.getElementById("minutes2").value);
-	var period = document.getElementById("period2").value;
-	hours = (hours < 10) ? "0" + hours : hours;
-	minutes = (minutes< 10) ? "0" + minutes : minutes;
+// function setAlarm2(event) {
+// 	event.preventDefault();
+// 	var hours = parseInt(document.getElementById("hours2").value);
+// 	var minutes = parseInt(document.getElementById("minutes2").value);
+// 	var period = document.getElementById("period2").value;
+// 	hours = (hours < 10) ? "0" + hours : hours;
+// 	minutes = (minutes< 10) ? "0" + minutes : minutes;
 
-	document.getElementById("set2").innerHTML = hours + ":" + minutes + " " + period;
-	if (period == "PM"){
-		hours = hours+12;
-	};
-	alarmTime = {
-		'hours': hours,
-		'minutes': minutes
-	};
-}
+// 	document.getElementById("set2").innerHTML = hours + ":" + minutes + " " + period;
+// 	if (period == "PM"){
+// 		hours = hours+12;
+// 	};
+// 	alarmTime = {
+// 		'hours': hours,
+// 		'minutes': minutes
+// 	};
+// }
 
-var audio = document.getElementById("myAudio");
-audio.pause();
+// var audio = document.getElementById("myAudio");
+// audio.pause();
 
-function setAlarm3(event) {
-	event.preventDefault();
-	var hours = parseInt(document.getElementById("hours3").value);
-	var minutes = parseInt(document.getElementById("minutes3").value);
-	var period = document.getElementById("period3").value;
-	hours = (hours < 10) ? "0" + hours : hours;
-	minutes = (minutes< 10) ? "0" + minutes : minutes;
+// function setAlarm3(event) {
+// 	event.preventDefault();
+// 	var hours = parseInt(document.getElementById("hours3").value);
+// 	var minutes = parseInt(document.getElementById("minutes3").value);
+// 	var period = document.getElementById("period3").value;
+// 	hours = (hours < 10) ? "0" + hours : hours;
+// 	minutes = (minutes< 10) ? "0" + minutes : minutes;
 
-	document.getElementById("set3").innerHTML = hours + ":" + minutes + " " + period;
-	if (period == "PM"){
-		hours = hours+12;
-	};
-	alarmTime = {
-		'hours': hours,
-		'minutes': minutes
-	};
-}
+// 	document.getElementById("set3").innerHTML = hours + ":" + minutes + " " + period;
+// 	if (period == "PM"){
+// 		hours = hours+12;
+// 	};
+// 	alarmTime = {
+// 		'hours': hours,
+// 		'minutes': minutes
+// 	};
+// }
 
-var audio = document.getElementById("myAudio");
-audio.pause();
+// var audio = document.getElementById("myAudio");
+// audio.pause();
 
 
 
