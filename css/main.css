@@ -44,3 +44,7 @@ img {
 	border: 2px solid aqua;
 	border-radius: 5px;
 }
+
+.six {
+	background-image: url("/images/retro_triangle.gif");
+}

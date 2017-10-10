@@ -12,7 +12,6 @@ for(var i = 0, l = props.length; i < l; i++) {
         break;
     }
 }
-
 var xAngle = 0, yAngle = 0;
 $('body').keydown(function(evt) {
     switch(evt.keyCode) {
@@ -77,7 +76,7 @@ function displayTime() {
 		session = "AM"; // defines if it's AM
 	}
 	
-	hours = (hours < 10) ? "0" + hours : hours;
+	hours = (hours < 10) ? 0 + hours : hours;
 	minutes = (minutes< 10) ? "0" + minutes : minutes;
 	seconds = (seconds < 10) ? "0" + seconds : seconds;
 
@@ -109,7 +108,7 @@ function setAlarm1(event) {
 	var minutes = parseInt(document.getElementById("minutes").value);
 	var period = document.getElementById("period").value;
 	hours = (hours < 10) ? 0 + hours : hours;
-	minutes = (minutes< 10) ? 0 + minutes : minutes;
+	minutes = (minutes< 10) ? "0" + minutes : minutes;
 
 	document.getElementById("set").innerHTML = hours + ":" + minutes + " " + period;
 	if (period == "PM"){
