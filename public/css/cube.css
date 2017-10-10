@@ -86,7 +86,7 @@ label {
 
 .inputs {
 	margin: 2px;
-  background: aqua;
+  background: black;
   width: 50px;
   padding: 5px 5px 5px 5px;
   border: 2px solid aqua;
@@ -94,11 +94,25 @@ label {
   border-radius: 5px;
   appearance: none;
 	font: normal 0.5em 'Orbitron';
+	color: aqua;
+}
+
+.inputs:hover {
+	margin: 2px;
+  background: aqua;
+  width: 50px;
+  padding: 5px 5px 5px 5px;
+  border: 2px solid black;
+  height: 20px;
+  border-radius: 5px;
+  appearance: none;
+	font: normal 0.5em 'Orbitron';
+	color: black;
 }
 
 select {
   margin: 2px;
-  background: aqua;
+  background: black;
   width: 55px;
   padding: 5px 35px 5px 5px;
   font-size: 16px;
@@ -106,5 +120,19 @@ select {
   height: 34px;
   appearance: none;
   font: normal 0.5em 'Orbitron';
+  color: aqua;
+} 
+
+select:hover {
+  margin: 2px;
+  background: aqua;
+  width: 55px;
+  padding: 5px 35px 5px 5px;
+  font-size: 16px;
+  border: 2px solid black;
+  height: 34px;
+  appearance: none;
+  font: normal 0.5em 'Orbitron';
+  color: black;
 } 
 

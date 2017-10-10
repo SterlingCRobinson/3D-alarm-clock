@@ -62,8 +62,8 @@ function displayTime() {
 		alarmTriggered = true;
 		var audio = document.getElementById("myAudio");
 		audio.play();
-		document.getElementById("stop").classList.remove('hidden'); // STOP BUTTON SHOWS UP WHEN ALARM GET TRIGGERED
 		document.getElementById("gif").classList.remove('hidden');  // TREE GIF SHOWS UP WHEN ALARM GET TRIGGERED
+		document.getElementById("stop").classList.remove('hidden')  // STOP BUTTON SHOWS UP WHEN ALARM GET TRIGGERED
 	}
 	
 	if (hours == 0) {
@@ -122,6 +122,10 @@ function setAlarm1(event) {
 
 var audio = document.getElementById("myAudio");
 audio.pause();
+
+// function stop(event) {
+// 	event.preventDefault();
+// }
 // END OF ALARM TIME SET
 ///////////////////////////////////////////////////////////////////////////
 
